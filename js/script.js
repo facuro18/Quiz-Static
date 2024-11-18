@@ -5,7 +5,12 @@ const STORE = {
         question:
           '¿Qué etiqueta HTML se utiliza para incluir un archivo CSS externo?',
         code: `&lt;etiqueta&gt;&lt;/etiqueta&gt;`,
-        answers: ['style', 'css', 'link', 'stylesheet'],
+        answers: [
+          '&lt;style&gt;',
+          '&lt;css&gt;',
+          '&lt;link&gt;',
+          '&lt;stylesheet&gt;',
+        ],
         correctAnswer: '<link>',
       },
       {
@@ -732,7 +737,7 @@ function $updateQuestion(appState) {
 
   // Change continue back to submit
   $('.continue-btn')
-    .val('Submit')
+    .val('Contestar')
     .removeClass('continue-btn')
     .addClass('submit-btn')
     .prop('disabled', true)
@@ -824,7 +829,7 @@ function submitAnswer(appState) {
 
   // Change submit back to continue
   $('.submit-btn')
-    .val('Continue')
+    .val('Continuar')
     .removeClass('submit-btn')
     .addClass('continue-btn')
 
