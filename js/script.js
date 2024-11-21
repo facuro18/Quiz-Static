@@ -361,7 +361,7 @@ let obj = {
   correctAnswer: 'Las funciones flecha tienen un alcance diferente de this que el objeto',
 },
     ],
-    'Programación backend': [
+    'Concepto, definiciones y logica de programación': [
       {
         question: '¿Qué significa CSS?',
         code: ``,
