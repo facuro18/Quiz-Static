@@ -220,18 +220,19 @@ const STORE = {
         code: `
 &lt;form ...&gt;
 &lt;/form&gt;`,
-        answers: [
-          'lang, process',
-          'before, after',
-          'id, class',
-          'method, action',
-        ],
-        correctAnswer: 'method, action',
-      },
-      question: '¿Cuál es la diferencia entre los métodos GET y POST?',
+answers: [
+  'lang, process',
+  'before, after',
+  'id, class',
+  'method, action',
+],
+correctAnswer: 'method, action',
+},
+{
+  question: '¿Cuál es la diferencia entre los métodos GET y POST?',
   code: `
-&lt;form method='get'&gt;
-&lt;form method='post'&gt;`,
+  &lt;form method='get'&gt;
+  &lt;form method='post'&gt;`,
   answers: [
     'El método GET simplemente recupera datos, mientras que POST puede enviar y recibir',
     'El método POST simplemente envía datos, mientras que GET puede enviar y recibir',
@@ -268,7 +269,7 @@ const STORE = {
   answers: ['i===5', '5', 'i&lt;=5', 'i&lt;5'],
   correctAnswer: 'i&lt;5',
 },
-{
+	    {
   question: '¿Qué ocurre cuando la condición de un bucle while siempre es verdadera?',
   code: `while(5===5){ ... }`,
   answers: [
