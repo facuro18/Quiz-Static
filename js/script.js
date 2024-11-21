@@ -213,7 +213,7 @@ const STORE = {
         correctAnswer: 'Especificar en qué orden aparecen los elementos flexibles',
       },
     ],
-    'APIs y fetch': [
+    'APIs, fetch y estructuras repetitivas': [
       {
         question:
           '¿Cuáles se consideran los dos atributos más importantes para un formulario?',
