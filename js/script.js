@@ -46,7 +46,7 @@ const STORE = {
         correctAnswer: "&lt;input type='image' src='test.jpg' ...&gt;",
       },
     ],
-    'Arreglos': [
+    Arreglos: [
       {
         question: '¿Qué método usaríamos para devolver el valor 4?',
         code: `let arr = [2,4,6,8,10]`,
@@ -54,7 +54,7 @@ const STORE = {
         correctAnswer: 'arr[1]',
       },
       {
-        question: '¿Cómo agregaríamos un valor al final de la matriz?',
+        question: '¿Cómo agregaríamos un valor al final del array?',
         code: `let arr = 
 ['a','b','c','d','e']`,
         answers: [
@@ -67,93 +67,89 @@ const STORE = {
       },
       {
         question:
-          '¿Qué usaríamos para eliminar y devolver el último valor de la matriz?',
+          '¿Qué usaríamos para eliminar y devolver el último valor del array?',
         code: `let arr = 
 [3,1,4,1,5,9]`,
         answers: ['arr.remove(9)', "arr.grep('9')", 'arr.shift()', 'arr.pop()'],
         correctAnswer: 'arr.pop()',
       },
       {
-        question: 'How would we find the length of the following array?',
+        question: 'Cómo encontraríamos la longitud del siguiente array?',
         code: `let arr = 
 [23,1,943,81,-52,3.14159]`,
         answers: ['arr.depth()', 'arr.index', 'arr.shift()', 'arr.length'],
         correctAnswer: 'arr.length',
       },
       {
-        question: '¿En qué índice se encuentra el valor 9 en la siguiente matriz?',
+        question:
+          '¿En qué índice se encuentra el valor 9 en el siguiente array?',
         code: `let arr = 
 [23,1,943,81,9,3.14159]`,
         answers: ['2', '3', '5', '4'],
         correctAnswer: '4',
       },
     ],
-    'HTML5': [
+    'Bases de datos': [
       {
-        question: '¿Cuáles son los 3 elementos básicos necesarios para una página HTML?',
+        question:
+          '¿Qué comando SQL se utiliza para recuperar datos de una base de datos?',
         code: ``,
-        answers: [
-          '&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;',
-          '&lt;start&gt;, &lt;middle&gt;, &lt;end&gt;',
-          '&lt;html&gt;, &lt;body&gt;, &lt;script&gt;',
-          '&lt;html&gt;, &lt;head&gt;, &lt;body&gt;',
-        ],
-        correctAnswer: '&lt;html&gt;, &lt;head&gt;, &lt;body&gt;',
+        answers: ['INSERT', 'DELETE', 'UPDATE', 'SELECT'],
+        correctAnswer: 'SELECT',
       },
       {
         question:
-          '¿Qué elemento HTML es el encabezado más grande y, por lo general, solo debe usarse una vez?',
+          '¿Qué significa la sigla ACID en el contexto de las bases de datos?',
         code: ``,
         answers: [
-          '&lt;heading&gt;',
-          '&lt;title&gt;',
-          '&lt;h6&gt;',
-          '&lt;h1&gt;',
+          'Atomicidad, Consistencia, Independencia, Durabilidad',
+          'Automatización, Consistencia, Integridad, Durabilidad',
+          'Atomicidad, Consistencia, Aislamiento, Durabilidad',
+          'Autenticidad, Consistencia, Independencia, Duplicación',
         ],
-        correctAnswer: '&lt;h1&gt;',
+        correctAnswer: 'Atomicidad, Consistencia, Aislamiento, Durabilidad',
       },
       {
-        question: '¿Qué elemento HTML crea un salto de línea?',
-        code: `
-&lt;p&gt;The quick brown fox... 
-&lt;tag&gt;jumped over the lazy dogs&lt;/p&gt;`,
-        answers: ['&lt;break&gt;', '&lt;hr&gt;', '&lt;lb&gt;', '&lt;br&gt;'],
-        correctAnswer: '&lt;br&gt;',
+        question:
+          '¿Qué tipo de base de datos organiza los datos en tablas relacionadas?',
+        code: ``,
+        answers: ['Relacional', 'NoSQL', 'Jerárquica', 'Grafos'],
+        correctAnswer: 'Relacional',
       },
       {
-        question: '¿Cómo creamos un enlace HTML?',
+        question:
+          '¿Qué comando SQL se utiliza para modificar la estructura de una tabla existente?',
         code: ``,
         answers: [
-          "&lt;link href='test.com'&gt;Test.com&lt;/link&gt;",
-          "&lt;a src='test.com'&gt;Test.com&lt;/a&gt;",
-          "&lt;href url='test.com'&gt;Test.com&lt;/href&gt;",
-          "&lt;a href='test.com'&gt;Test.com&lt;/a&gt;",
+          'ALTER TABLE',
+          'CREATE TABLE',
+          'UPDATE TABLE',
+          'MODIFY TABLE',
         ],
-        correctAnswer: "&lt;a href='test.com'&gt;Test.com&lt;/a&gt;",
+        correctAnswer: 'ALTER TABLE',
       },
       {
-        question: '¿Cuáles de estos elementos son todos elementos &lt;table&gt; ?',
-        code: `&lt;table&gt;
- ... 
-&lt;/table&gt;`,
+        question:
+          '¿Qué propiedad de las bases de datos relacionales permite que una tabla haga referencia a una clave primaria en otra tabla?',
+        code: ``,
         answers: [
-          '&lt;thead&gt;, &lt;th&gt;, &lt;cell&gt;',
-          '&lt;thead&gt;, &lt;tbody&gt;, &lt;row&gt;',
-          '&lt;tbody&gt;, &lt;tr&gt;, &lt;cell&gt;',
-          '&lt;thead&gt;, &lt;tr&gt;, &lt;td&gt;',
+          'Llave secundaria',
+          'Llave foránea',
+          'Llave de unión',
+          'Llave relacional',
         ],
-        correctAnswer: '&lt;thead&gt;, &lt;tr&gt;, &lt;td&gt;',
+        correctAnswer: 'Llave foránea',
       },
     ],
-    'CSS': [
+    CSS: [
       {
         question: '¿Qué es Flexbox?',
         code: ``,
         answers: [
           'Una biblioteca de JavaScript para diseño responsivo',
-	  'Un marcado HTML que permite contenido flexible',
-	  'Un enfoque de desarrollo para crear HTML semántico',
-	  'Una colección de propiedades CSS para facilitar el diseño de páginas',
+          'Un marcado HTML que permite contenido flexible',
+          'Un enfoque de desarrollo para crear HTML semántico',
+          'Una colección de propiedades CSS para facilitar el diseño de páginas',
         ],
         correctAnswer:
           'Una colección de propiedades CSS para facilitar el diseño de páginas',
@@ -179,9 +175,9 @@ const STORE = {
 }`,
         answers: [
           'La base del elemento flexible',
-	  'El margen del elemento flexible',
-	  'La negrita del elemento flexible',
-	  'El tamaño inicial del elemento flexible',
+          'El margen del elemento flexible',
+          'La negrita del elemento flexible',
+          'El tamaño inicial del elemento flexible',
         ],
         correctAnswer: 'El tamaño inicial del elemento flexible',
       },
@@ -206,161 +202,75 @@ const STORE = {
 }`,
         answers: [
           'Especificar la dirección en la que aparecen los elementos flexibles',
-	  'Definir cuándo se carga cada elemento flexible',
-	  'Ordenar los elementos flexibles por diferentes valores (alfabético, numérico)',
-	  'Especificar en qué orden aparecen los elementos flexibles',
+          'Definir cuándo se carga cada elemento flexible',
+          'Ordenar los elementos flexibles por diferentes valores (alfabético, numérico)',
+          'Especificar en qué orden aparecen los elementos flexibles',
         ],
-        correctAnswer: 'Especificar en qué orden aparecen los elementos flexibles',
+        correctAnswer:
+          'Especificar en qué orden aparecen los elementos flexibles',
       },
     ],
-    'APIs, fetch y estructuras repetitivas': [
+    'APIs, fetch': [
       {
         question:
-          '¿Cuáles se consideran los dos atributos más importantes para un formulario?',
+          '¿Qué método de JavaScript se utiliza para realizar solicitudes HTTP?',
+        code: ``,
+        answers: ['fetch()', 'get()', 'post()', 'request()'],
+        correctAnswer: 'fetch()',
+      },
+      {
+        question:
+          '¿Qué propiedad del objeto Response se utiliza para obtener los datos en formato JSON?',
+        code: ``,
+        answers: [
+          'response.text()',
+          'response.json()',
+          'response.data()',
+          'response.body()',
+        ],
+        correctAnswer: 'response.json()',
+      },
+      {
+        question:
+          '¿Cuál es el propósito de las cabeceras en una solicitud fetch?',
+        code: ``,
+        answers: [
+          'Definir los parámetros de búsqueda',
+          'Especificar la URL de la solicitud',
+          'Proporcionar metadatos adicionales sobre la solicitud o respuesta',
+          'Indicar el tiempo de espera de la solicitud',
+        ],
+        correctAnswer:
+          'Proporcionar metadatos adicionales sobre la solicitud o respuesta',
+      },
+      {
+        question: '¿Cómo capturamos errores al usar fetch?',
         code: `
-&lt;form ...&gt;
-&lt;/form&gt;`,
-answers: [
-  'lang, process',
-  'before, after',
-  'id, class',
-  'method, action',
-],
-correctAnswer: 'method, action',
-},
-{
-  question: '¿Cuál es la diferencia entre los métodos GET y POST?',
-  code: `
-  &lt;form method='get'&gt;
-  &lt;form method='post'&gt;`,
-  answers: [
-    'El método GET simplemente recupera datos, mientras que POST puede enviar y recibir',
-    'El método POST simplemente envía datos, mientras que GET puede enviar y recibir',
-    'El método POST se utiliza para diferentes tipos de bases de datos',
-    'El método GET envía toda la información en la URL',
-  ],
-  correctAnswer: 'El método GET envía toda la información en la URL',
-},
-{
-  question: '¿Cuáles son los dos tipos de bucles en JavaScript?',
-  code: ``,
-  answers: [
-    'loop, cycle',
-    'inclusive, exclusive',
-    'anonymous, declared',
-    'for, while',
-  ],
-  correctAnswer: 'for, while',
-},
-{
-  question: '¿En qué orden consisten las 3 condiciones de un bucle for?',
-  code: `for(...;...;...){`,
-  answers: [
-    'variables; condición inicial; expresión final',
-    'variables; contador; función',
-    'iteración; inicialización; condición',
-    'inicialización; condición; expresión final',
-  ],
-  correctAnswer: 'inicialización; condición; expresión final',
-},
-{
-  question: '¿Qué condicional usaríamos para ejecutar este bucle 5 veces?',
-  code: `for(let i=0;...; i++){`,
-  answers: ['i===5', '5', 'i&lt;=5', 'i&lt;5'],
-  correctAnswer: 'i&lt;5',
-},
-	    {
-  question: '¿Qué ocurre cuando la condición de un bucle while siempre es verdadera?',
-  code: `while(5===5){ ... }`,
-  answers: [
-    'El código de ejecución nunca se ejecutará',
-    'El código de ejecución se ejecutará una vez',
-    'Un error de sintaxis detendrá la página en tiempo de ejecución',
-    'El código de ejecución se ejecutará indefinidamente',
-  ],
-  correctAnswer: 'El código de ejecución se ejecutará indefinidamente',
-},
-{
-  question: '¿A qué será igual la variable count al final de este bucle?',
-  code: `
-let count = 0;
-for(let i=0; i&lt;3; i++){
- count+=1;
-}
-return count;`,
-  answers: ['1', '2', '0', '3'],
-  correctAnswer: '3',
-},
-{
-  question: '¿Cómo convertimos esta cadena de palabras en un arreglo de palabras completas?',
-  code: `let str = 
-"The quick brown fox 
-jumped over the lazy dogs"`,
-  answers: [
-    'str.split()',
-    "str.words('')",
-    "str.convert('')",
-    "str.split(' ')",
-  ],
-  correctAnswer: "str.split(' ')",
-},
-{
-  question: '¿Cómo reemplazaríamos la segunda palabra en esta cadena por la palabra "will"?',
-  code: `let str = "I cannot code well"`,
-  answers: [
-    "str.replace('will', 'cannot')",
-    "str.convert('cannot', 'will')",
-    "str.mask('will', 'cannot')",
-    "str.replace('cannot', 'will')",
-  ],
-  correctAnswer: "str.replace('cannot', 'will')",
-},
-{
-  question: '¿Cómo llamamos al método de este objeto?',
-  code: `
-let obj = {
- car: 'Car',
- sayCar: function(){
-  console.log(this.car);
- }
-}`,
-  answers: [
-    'function sayCar(obj)',
-    'obj.function(sayCar)',
-    'sayCar()',
-    'obj.sayCar()',
-  ],
-  correctAnswer: 'obj.sayCar()',
-},
-{
-  question: '¿Qué es un método JavaScript?',
-  code: ``,
-  answers: [
-    'Un estilo de escribir código de una manera legible',
-    'La etiqueta HTML que le permite escribir JavaScript en línea',
-    'Un tipo de variable que permite que sea mutable',
-    'Una propiedad de un objeto que ejecuta una función',
-  ],
-  correctAnswer: 'Una propiedad de un objeto que ejecuta una función',
-},
-{
-  question: '¿Por qué no deberíamos usar funciones flecha de ES6 en declaraciones de métodos de objetos?',
-  code: `
-let obj = {
- car: "Audi",
- callCar: () =&gt; {
-  return this.car 
- }
-}`,
-  answers: [
-    'Las funciones flecha proporcionan propiedades adicionales que no son relevantes para el objeto',
-    'Las funciones flecha requieren parámetros',
-    'Las funciones flecha siempre son anónimas',
-    'Las funciones flecha tienen un alcance diferente de this que el objeto',
-  ],
-  correctAnswer: 'Las funciones flecha tienen un alcance diferente de this que el objeto',
-},
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  ... // ¿Qué sigue aquí?`,
+        answers: [
+          '.finally(callback)',
+          '.catch(callback)',
+          '.thenError(callback)',
+          '.onError(callback)',
+        ],
+        correctAnswer: '.catch(callback)',
+      },
+      {
+        question: '¿Qué significa que fetch es una API basada en promesas?',
+        code: ``,
+        answers: [
+          'Que siempre devuelve un objeto JSON',
+          'Que se ejecuta de manera sincrónica',
+          'Que permite manejar resultados de manera asíncrona con .then() y .catch()',
+          'Que requiere una biblioteca externa para funcionar',
+        ],
+        correctAnswer:
+          'Que permite manejar resultados de manera asíncrona con .then() y .catch()',
+      },
     ],
+
     'Concepto, definiciones y logica de programación': [
       {
         question: '¿Qué significa CSS?',
@@ -389,9 +299,9 @@ let obj = {
         code: `box-sizing: border-box;`,
         answers: [
           'Agrega un borde al elemento',
-	  'Obliga al elemento a mantener la forma rectangular',
-	  'Elimina cualquier propiedad de un borde existente',
-	  'Obliga a que las dimensiones del margen, el relleno y el borde incluyan su ancho',
+          'Obliga al elemento a mantener la forma rectangular',
+          'Elimina cualquier propiedad de un borde existente',
+          'Obliga a que las dimensiones del margen, el relleno y el borde incluyan su ancho',
         ],
         correctAnswer:
           'Obliga a que las dimensiones del margen, el relleno y el borde incluyan su ancho',
@@ -399,17 +309,17 @@ let obj = {
       {
         question:
           '¿Cuál es la diferencia entre position: inline y position: inline-block?',
-	  code: `
+        code: `
 	  position: inline;
 	  position: inline-block;`,
-	answers: [
-	  'inline solo se usa para definir márgenes y relleno exclusivos',
-	  'inline-block solo se usa para definir márgenes adicionales',
-	  'inline se usa para evitar que los elementos se ajusten a filas diferentes en pantallas grandes',
-	  'inline-block permite que un usuario defina un ancho y una altura',
-	],
-	correctAnswer:
-	  'inline-block permite que un usuario defina un ancho y una altura',
+        answers: [
+          'inline solo se usa para definir márgenes y relleno exclusivos',
+          'inline-block solo se usa para definir márgenes adicionales',
+          'inline se usa para evitar que los elementos se ajusten a filas diferentes en pantallas grandes',
+          'inline-block permite que un usuario defina un ancho y una altura',
+        ],
+        correctAnswer:
+          'inline-block permite que un usuario defina un ancho y una altura',
       },
       {
         question:
@@ -424,137 +334,232 @@ p.para { color: blue; }`,
     ],
     'Estructuras condicionales': [
       {
-        question: '¿Cuáles son los dos tipos de declaraciones condicionales en JavaScript?',
+        question:
+          '¿Qué operador se utiliza para combinar múltiples condiciones en una declaración if?',
         code: ``,
+        answers: ['&&', '||', '!', '&'],
+        correctAnswer: '&&',
+      },
+      {
+        question: '¿Cuál es el resultado de este bloque de código?',
+        code: `if(10 > 5 || 3 > 7) { return "A"; } 
+else { return "B"; }`,
+        answers: ['A', 'B', 'true', 'false'],
+        correctAnswer: 'A',
+      },
+      {
+        question:
+          '¿Qué operador se usa para evaluar la negación de una condición?',
+        code: ``,
+        answers: ['!=', '!==', '&&', '!'],
+        correctAnswer: '!',
+      },
+      {
+        question: '¿Qué retornará este bloque de código?',
+        code: `let age = 18;
+if(age >= 18) { return "Adulto"; }
+else { return "Menor"; }`,
+        answers: ['Adulto', 'Menor', 'undefined', '18'],
+        correctAnswer: 'Adulto',
+      },
+      {
+        question:
+          '¿Cómo podemos escribir este bloque en una línea usando el operador ternario?',
+        code: `if(score &gt;= 50) { return "Aprobado"; } else { return "Reprobado"; }`,
         answers: [
-          'if, when',
-          'choice, determined',
-          'switch, then',
-          'if, switch',
+          'score ? "Aprobado" : "Reprobado"',
+          'score &gt;= 50 ? "Aprobado" : "Reprobado"',
+          'score : "Aprobado" || "Reprobado"',
+          'score &gt;= 50 ? "Reprobado" : "Aprobado"',
         ],
-        correctAnswer: 'if, switch',
-      },
-      {
-        question: 'Este bloque de codigo, ¿Que retornará?',
-        code: `if(5&lt;=2){ return true; } 
-else { return false; }`,
-        answers: ['5 &gt; 2', 'true', '5 &lt;= 2', 'false'],
-        correctAnswer: 'false',
-      },
-      {
-        Pregunta: '¿Cuándo utilizarías una sentencia switch?',
-Código: ``,
-Respuestas: [
-'Cuando quieres producir un resultado aleatorio',
-'Si hay una variable involucrada que puede cambiar',
-'Cuando necesitas cambiar un booleano a verdadero o falso',
-'Cuando necesitas muchas acciones diferentes para muchas evaluaciones específicas',
-        ],
-        correctAnswer:
-          'Cuando necesitas muchas acciones diferentes para muchas evaluaciones específicas',
-      },
-      {
-        question: 'Este bloque de codigo, ¿Que retornará?',
-        code: `let foo = 1;
-if(foo){ return true; }
-else { return false; }`,
-        answers: ['1', 'false', 'foo', 'true'],
-        correctAnswer: 'true',
-      },
-      {
-        question: 'Este bloque de codigo, ¿Que retornará?',
-        code: `let foo = 0;
-if(foo && foo &lt; 5){
- return 1; }
-else if(foo &lt; 5){ 
- return 2; }
-else { 
- return 3; }`,
-        answers: ['1', '3', 'false', '2'],
-        correctAnswer: '2',
+        correctAnswer: 'score &gt;= 50 ? "Aprobado" : "Reprobado"',
       },
     ],
+
     'Clases y objetos': [
       {
-        question: '¿Cómo podemos registrar en console.log el valor de la marca de este coche?',
-        code: `let car = {
- year: 2018,
- make: "Audi",
- model: "S4"
-}`,
+        question: '¿Cómo definimos una clase en JavaScript?',
+        code: ``,
         answers: [
-          'console.log(obj.car(make))',
-          'console.log(car(make))',
-          'console.log(make)',
-          'console.log(car.make)',
+          'function ClassName(){}',
+          'class ClassName {}',
+          'create class ClassName',
+          'ClassName {}',
         ],
-        correctAnswer: 'console.log(car.make)',
+        correctAnswer: 'class ClassName {}',
       },
       {
         question:
-          "¿Cómo insertamos todas las claves de un objeto en una nueva matriz llamada carProps?",
-        code: `let car = {
- year: 2018,
- make: "Audi",
- model: "S4"
-}`,
-        answers: [
-          'let carProps = car.keys(all)',
-          'let carProps = [Object(car).keys()]',
-          'let carProps = car.Object.keys()',
-          'let carProps = Object.keys(car)',
-        ],
-        correctAnswer: 'let carProps = Object.keys(car)',
-      },
-      {
-        question:
-          '¿Cómo se llama una propiedad de un objeto que es una función?',
-        code: `let car = {
- year: 2018,
- make: "Audi",
- model: "S4",
- displayName: function(){
-  return this.year +
-      + " "
-      + this.make 
-      + " "
-      + this.model
- }
-}`,
-        answers: [
-          'Object function',
-          'Return function',
-          'Function property',
-          'Object method',
-        ],
-        correctAnswer: 'Object method',
-      },
-      {
-        pregunta: '¿Qué hace que un objeto sea diferente de una matriz?',
-código: ``,
-respuestas: [
-'Los objetos pueden contener cualquier estructura de datos, mientras que las matrices no',
-'Las matrices solo son útiles como medio de almacenamiento, mientras que los objetos pueden contener funciones',
-'Las matrices están limitadas a una sola dimensión, mientras que los objetos pueden estar anidados',
-'Los objetos asocian claves y valores, mientras que las matrices son simplemente una lista de datos',
-],
-respuestacorrecta:
-'Los objetos asocian claves y valores, mientras que las matrices son simplemente una lista de datos',
-},
-      {
-        question: '¿Qué retornará console.log?',
-        code: `let obj = {
- total: 5,
- multiplier: 4,
- multiply: function(){
-  return 
-   this.total *
-   this.multiplier;
+          '¿Qué palabra clave usamos para crear una instancia de una clase?',
+        code: `class Car {
+ constructor(make, model) {
+   this.make = make;
+   this.model = model;
  }
 }
-console.log(obj.multiply()*2);`,
-        answers: ['10', '8', '80', '40'],
-        correctAnswer: '40',
+let car = ...`,
+        answers: ['new', 'create', 'class', 'instance'],
+        correctAnswer: 'new',
+      },
+      {
+        question: '¿Qué retornará el siguiente código?',
+        code: `class Person {
+ constructor(name) {
+   this.name = name;
+ }
+ greet() {
+   return 'Hello, ' + this.name;
+ }
+}
+const john = new Person('John');
+john.greet();`,
+        answers: ['Hello,', 'John', 'Hello, John', 'undefined'],
+        correctAnswer: 'Hello, John',
+      },
+      {
+        question: '¿Cómo accedemos a una propiedad estática de una clase?',
+        code: `class MathUtils {
+ static pi = 3.1416;
+}
+const value = ...`,
+        answers: [
+          'MathUtils.pi',
+          'new MathUtils().pi',
+          'MathUtils.prototype.pi',
+          'MathUtils::pi',
+        ],
+        correctAnswer: 'MathUtils.pi',
+      },
+      {
+        question:
+          '¿Qué palabra clave usamos para heredar propiedades y métodos de otra clase?',
+        code: `class Animal {
+ speak() {
+   return 'I am an animal';
+ }
+}
+class Dog extends Animal {
+ speak() {
+   return super.speak() + ' and a dog';
+ }
+}`,
+        answers: ['inherit', 'extend', 'super', 'extends'],
+        correctAnswer: 'extends',
+      },
+    ],
+    'Versionado y despliegue': [
+      {
+        question: '¿Qué significa el término "version control"?',
+        code: ``,
+        answers: [
+          'Un proceso para escribir código más rápido',
+          'Un sistema para gestionar cambios en el código fuente a lo largo del tiempo',
+          'Una herramienta para automatizar el despliegue de aplicaciones',
+          'Una práctica para crear copias de seguridad de bases de datos',
+        ],
+        correctAnswer:
+          'Un sistema para gestionar cambios en el código fuente a lo largo del tiempo',
+      },
+      {
+        question: '¿Cuál es la función principal del comando "git clone"?',
+        code: ``,
+        answers: [
+          'Subir cambios locales a un repositorio remoto',
+          'Descargar una copia completa de un repositorio remoto',
+          'Unir diferentes ramas en un repositorio',
+          'Eliminar un repositorio de manera remota',
+        ],
+        correctAnswer: 'Descargar una copia completa de un repositorio remoto',
+      },
+      {
+        question:
+          '¿Qué comando usamos para combinar cambios de una rama en otra en Git?',
+        code: ``,
+        answers: ['git merge', 'git pull', 'git push', 'git branch'],
+        correctAnswer: 'git merge',
+      },
+      {
+        question:
+          '¿Qué archivo comúnmente se usa para ignorar ciertos archivos o carpetas en un repositorio de Git?',
+        code: ``,
+        answers: ['ignore.conf', '.gitconfig', '.gitignore', '.gitkeep'],
+        correctAnswer: '.gitignore',
+      },
+      {
+        question:
+          '¿Qué es un "pipeline" en un sistema de integración y despliegue continuo (CI/CD)?',
+        code: ``,
+        answers: [
+          'Un repositorio donde se almacenan las versiones de una aplicación',
+          'Una secuencia automatizada de pasos para compilar, probar y desplegar una aplicación',
+          'Un conjunto de comandos para crear un servidor de pruebas',
+          'Un sistema para gestionar múltiples ramas en Git',
+        ],
+        correctAnswer:
+          'Una secuencia automatizada de pasos para compilar, probar y desplegar una aplicación',
+      },
+    ],
+    'Frameworks y librerías frontend': [
+      {
+        question: '¿Qué es una librería frontend?',
+        code: ``,
+        answers: [
+          'Un conjunto de herramientas para escribir código en el backend',
+          'Una colección de funciones y componentes reutilizables para construir interfaces de usuario',
+          'Un entorno para gestionar bases de datos en aplicaciones web',
+          'Un editor de código especializado en desarrollo web',
+        ],
+        correctAnswer:
+          'Una colección de funciones y componentes reutilizables para construir interfaces de usuario',
+      },
+      {
+        question: '¿Cuál es una diferencia clave entre React y Angular?',
+        code: ``,
+        answers: [
+          'React es una librería, mientras que Angular es un framework',
+          'React usa TypeScript por defecto, mientras que Angular no',
+          'Angular es más ligero que React',
+          'React tiene un ciclo de vida más complejo que Angular',
+        ],
+        correctAnswer:
+          'React es una librería, mientras que Angular es un framework',
+      },
+      {
+        question: '¿Qué significa el término "virtual DOM" en React?',
+        code: ``,
+        answers: [
+          'Un modelo que representa cómo se estructuran los datos en el backend',
+          'Una copia ligera del DOM real que React utiliza para optimizar actualizaciones',
+          'Un entorno donde se ejecutan las aplicaciones de React',
+          'Un motor que compila aplicaciones frontend para ejecutarse más rápido',
+        ],
+        correctAnswer:
+          'Una copia ligera del DOM real que React utiliza para optimizar actualizaciones',
+      },
+      {
+        question:
+          '¿Qué comando se utiliza para crear un nuevo proyecto con Vue CLI?',
+        code: ``,
+        answers: [
+          'vue init <nombre-del-proyecto>',
+          'vue create <nombre-del-proyecto>',
+          'npm install vue <nombre-del-proyecto>',
+          'create vue-app <nombre-del-proyecto>',
+        ],
+        correctAnswer: 'vue create <nombre-del-proyecto>',
+      },
+      {
+        question:
+          '¿Cuál es el propósito de un "component" en frameworks como React o Angular?',
+        code: ``,
+        answers: [
+          'Un archivo donde se guardan todas las rutas de la aplicación',
+          'Una unidad reutilizable que encapsula estructura, estilo y comportamiento de UI',
+          'Una función que conecta el frontend con el backend',
+          'Un método que mejora el rendimiento del DOM',
+        ],
+        correctAnswer:
+          'Una unidad reutilizable que encapsula estructura, estilo y comportamiento de UI',
       },
     ],
   },
@@ -596,10 +601,10 @@ function $fade(appState) {
         500
       )
     ).done(function () {
-      // Display results of the quiz
+      // Mostrar resultados después de la animación de salida
       $showResults(appState)
-      $('.results-wrapper').hide().removeClass('hide')
-      $('.question-answer-wrapper, .results-wrapper').fadeIn(500)
+      $('.results-wrapper').hide().removeClass('hide') // Ocultar antes de mostrar
+      $('.question-answer-wrapper, .results-wrapper').fadeIn(500) // Fade in de los resultados
     })
 
     // This is if the app is just starting
@@ -652,34 +657,43 @@ function $fade(appState) {
 
 // Work in progress...
 function $showResults(appState) {
-  if (appState.correctAnswers === 10) {
-    let endMsg = `Obtuviste ${appState.percCorrect}% correcto!
-No tengo nada más que enseñarte. ¡Sigue adelante y prospera!
-`
-  } else {
-    $('.answer-btn').remove()
-    let endMsg = `Obtuviste ${appState.percCorrect}% correcto!`
-    let endFeedback = ``
-    if (appState.progress.incorrectCategories.length === 0) {
-      endFeedback = `Lo hiciste! Buen trabajo job!`
-    } else {
-      endFeedback = `Es posible que desee estudiar las siguientes categorías:`
-    }
+  // Inicialización del mensaje final y feedback
+  let endMsg = ''
+  let endFeedback = ''
+  let $failList = $('<ul class="failures"></ul>')
 
-    $('.quiz-end-score').html(endMsg)
-    let $failList = $('<ul class="failures"></ul>')
-    appState.progress.incorrectCategories.map(cat => {
-      $failList.append("<li class='category'>" + cat + '</li>')
-    })
-    $('.quiz-end-feedback-p').html(endFeedback)
-    $('.quiz-end-categories').append($failList)
-    $('.results-wrapper').removeClass('hide').css('display', 'flex')
-    $(
-      '.question-answer-wrapper, .results-wrapper, .quiz-end-feedback, .quiz-end-score, .retry-btn'
-    )
-      .css('display', 'flex')
-      .fadeIn(500)
+  // Verificar si el usuario obtuvo el puntaje perfecto
+  if (appState.correctAnswers === 10) {
+    endMsg = `¡Obtuviste ${appState.percCorrect}% correcto! No tengo nada más que enseñarte. ¡Sigue adelante y prospera!`
+    endFeedback = '' // No hace falta feedback extra si todo está perfecto
+  } else {
+    endMsg = `Obtuviste ${appState.percCorrect}% correcto!`
+
+    // Verifica si hay categorías incorrectas en el progreso
+    if (appState.progress.incorrectCategories.length === 0) {
+      endFeedback = `¡Lo hiciste! Buen trabajo.`
+    } else {
+      endFeedback = `Es posible que desees estudiar las siguientes categorías:`
+
+      // Agrega las categorías incorrectas a la lista de fallos
+      appState.progress.incorrectCategories.map(cat => {
+        $failList.append("<li class='category'>" + cat + '</li>')
+      })
+    }
   }
+
+  // Actualizar la interfaz de usuario
+  $('.quiz-end-score').html(endMsg)
+  $('.quiz-end-feedback-p').html(endFeedback)
+  $('.quiz-end-categories').empty().append($failList) // Limpiar y agregar categorías fallidas
+  $('.results-wrapper').removeClass('hide').css('display', 'flex')
+
+  // Mostrar los resultados con una animación fadeIn
+  $(
+    '.question-answer-wrapper, .results-wrapper, .quiz-end-feedback, .quiz-end-score, .retry-btn'
+  )
+    .css('display', 'flex')
+    .fadeIn(500)
 }
 
 // Update the question, code, answers, buttons in the DOM while we're in a faded out state
