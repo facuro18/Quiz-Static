@@ -228,173 +228,137 @@ const STORE = {
         ],
         correctAnswer: 'method, action',
       },
-      {
-        question: 'What are the some of the most popular &lt;input&gt; types?',
-        code: `&lt;input type='...'&gt;`,
-        answers: [
-          'css, target, label',
-          'auto, keyboard, mouse',
-          'text, include, exclude',
-          'text, checkbox, button',
-        ],
-        correctAnswer: 'text, checkbox, button',
-      },
-      {
-        question:
-          'Which attribute of an input does the label for attribute relate to?',
-        code: `&lt;label for=...&gt;&lt;/label&gt;
-&lt;input ...&gt;`,
-        answers: ['role', 'value', 'type', 'id'],
-        correctAnswer: 'id',
-      },
-      {
-        question:
-          'Which attribute of an input type of radio links them together to ensure only one is selected?',
-        code: `&lt;input type='radio' ...&gt;`,
-        answers: ['role', 'value', 'id', 'name'],
-        correctAnswer: 'name',
-      },
-      {
-        question: 'What is the difference between the GET and POST methods?',
-        code: `
+      question: '¿Cuál es la diferencia entre los métodos GET y POST?',
+  code: `
 &lt;form method='get'&gt;
 &lt;form method='post'&gt;`,
-        answers: [
-          'The GET method simply retrieves data while POST can send and receive',
-          'The POST method simply submits data while GET can send and receive',
-          'The POST method is used for different database types',
-          'The GET method sends all information in the URL',
-        ],
-        correctAnswer: 'The GET method sends all information in the URL',
-      },
-    ],
-    'Bases de datos': [
-      {
-        question: 'What are the two types of JavaScript loops?',
-        code: ``,
-        answers: [
-          'loop, cycle',
-          'inclusive, exclusive',
-          'anonymous, declared',
-          'for, while',
-        ],
-        correctAnswer: 'for, while',
-      },
-      {
-        question: 'What order do the 3 conditions of a for loop consist of?',
-        code: `for(...;...;...){`,
-        answers: [
-          'variables; start condition; final expression',
-          'variables; counter; function',
-          'iteration; initialization; condition',
-          'initialization; condition; final expression',
-        ],
-        correctAnswer: 'initialization; condition; final expression',
-      },
-      {
-        question: 'What conditional would we use to run this loop 5 times?',
-        code: `for(let i=0;...; i++){`,
-        answers: ['i===5', '5', 'i&lt;=5', 'i&lt;5'],
-        correctAnswer: 'i&lt;5',
-      },
-      {
-        question: "What happens when a while loop's condition is always true?",
-        code: `while(5===5){ ... }`,
-        answers: [
-          'The execution code will never run',
-          'The execution code will run once',
-          'A syntax error will halt the page at run time',
-          'The execution code will run indefinitely',
-        ],
-        correctAnswer: 'The execution code will run indefinitely',
-      },
-      {
-        question:
-          'What will the variable count be equal to at the end of this loop?',
-        code: `
+  answers: [
+    'El método GET simplemente recupera datos, mientras que POST puede enviar y recibir',
+    'El método POST simplemente envía datos, mientras que GET puede enviar y recibir',
+    'El método POST se utiliza para diferentes tipos de bases de datos',
+    'El método GET envía toda la información en la URL',
+  ],
+  correctAnswer: 'El método GET envía toda la información en la URL',
+},
+{
+  question: '¿Cuáles son los dos tipos de bucles en JavaScript?',
+  code: ``,
+  answers: [
+    'loop, cycle',
+    'inclusive, exclusive',
+    'anonymous, declared',
+    'for, while',
+  ],
+  correctAnswer: 'for, while',
+},
+{
+  question: '¿En qué orden consisten las 3 condiciones de un bucle for?',
+  code: `for(...;...;...){`,
+  answers: [
+    'variables; condición inicial; expresión final',
+    'variables; contador; función',
+    'iteración; inicialización; condición',
+    'inicialización; condición; expresión final',
+  ],
+  correctAnswer: 'inicialización; condición; expresión final',
+},
+{
+  question: '¿Qué condicional usaríamos para ejecutar este bucle 5 veces?',
+  code: `for(let i=0;...; i++){`,
+  answers: ['i===5', '5', 'i&lt;=5', 'i&lt;5'],
+  correctAnswer: 'i&lt;5',
+},
+{
+  question: '¿Qué ocurre cuando la condición de un bucle while siempre es verdadera?',
+  code: `while(5===5){ ... }`,
+  answers: [
+    'El código de ejecución nunca se ejecutará',
+    'El código de ejecución se ejecutará una vez',
+    'Un error de sintaxis detendrá la página en tiempo de ejecución',
+    'El código de ejecución se ejecutará indefinidamente',
+  ],
+  correctAnswer: 'El código de ejecución se ejecutará indefinidamente',
+},
+{
+  question: '¿A qué será igual la variable count al final de este bucle?',
+  code: `
 let count = 0;
 for(let i=0; i&lt;3; i++){
  count+=1;
 }
 return count;`,
-        answers: ['1', '2', '0', '3'],
-        correctAnswer: '3',
-      },
-    ],
-    'Frameworks y librerías frontend': [
-      {
-        question:
-          'How do we convert this string of words into an array of the whole words?',
-        code: `let str = 
+  answers: ['1', '2', '0', '3'],
+  correctAnswer: '3',
+},
+{
+  question: '¿Cómo convertimos esta cadena de palabras en un arreglo de palabras completas?',
+  code: `let str = 
 "The quick brown fox 
 jumped over the lazy dogs"`,
-        answers: [
-          'str.split()',
-          "str.words('')",
-          "str.convert('')",
-          "str.split(' ')",
-        ],
-        correctAnswer: "str.split(' ')",
-      },
-      {
-        question:
-          "How would we replace the second word in this string with the word 'will'?",
-        code: `let str = "I cannot code well"`,
-        answers: [
-          "str.replace('will', 'cannot')",
-          "str.convert('cannot', 'will')",
-          "str.mask('will', 'cannot')",
-          "str.replace('cannot', 'will')",
-        ],
-        correctAnswer: "str.replace('cannot', 'will')",
-      },
-      {
-        question: "How do you call this object's method?",
-        code: `
+  answers: [
+    'str.split()',
+    "str.words('')",
+    "str.convert('')",
+    "str.split(' ')",
+  ],
+  correctAnswer: "str.split(' ')",
+},
+{
+  question: '¿Cómo reemplazaríamos la segunda palabra en esta cadena por la palabra "will"?',
+  code: `let str = "I cannot code well"`,
+  answers: [
+    "str.replace('will', 'cannot')",
+    "str.convert('cannot', 'will')",
+    "str.mask('will', 'cannot')",
+    "str.replace('cannot', 'will')",
+  ],
+  correctAnswer: "str.replace('cannot', 'will')",
+},
+{
+  question: '¿Cómo llamamos al método de este objeto?',
+  code: `
 let obj = {
  car: 'Car',
  sayCar: function(){
   console.log(this.car);
  }
 }`,
-        answers: [
-          'function sayCar(obj)',
-          'obj.function(sayCar)',
-          'sayCar()',
-          'obj.sayCar()',
-        ],
-        correctAnswer: 'obj.sayCar()',
-      },
-      {
-        question: '¿Qué es un método JavaScript?',
-        code: ``,
-        answers: [
-          'Un estilo de escribir código de una manera legible',
-          'La etiqueta HTML que le permite escribir JavaScript en línea',
-          'Un tipo de variable que permite que sea mutable',
-          'Una propiedad de un objeto que ejecuta una función',
-        ],
-        correctAnswer: 'Una propiedad de un objeto que ejecuta una función',
-      },
-      {
-        question:
-          "Why shouldn't we use ES6 arrow functions in object method declarations?",
-        code: `
+  answers: [
+    'function sayCar(obj)',
+    'obj.function(sayCar)',
+    'sayCar()',
+    'obj.sayCar()',
+  ],
+  correctAnswer: 'obj.sayCar()',
+},
+{
+  question: '¿Qué es un método JavaScript?',
+  code: ``,
+  answers: [
+    'Un estilo de escribir código de una manera legible',
+    'La etiqueta HTML que le permite escribir JavaScript en línea',
+    'Un tipo de variable que permite que sea mutable',
+    'Una propiedad de un objeto que ejecuta una función',
+  ],
+  correctAnswer: 'Una propiedad de un objeto que ejecuta una función',
+},
+{
+  question: '¿Por qué no deberíamos usar funciones flecha de ES6 en declaraciones de métodos de objetos?',
+  code: `
 let obj = {
  car: "Audi",
  callCar: () =&gt; {
   return this.car 
  }
 }`,
-        answers: [
-          'Arrow functions provide extra properties that are irrelevant to the object',
-          'Arrow functions require parameters',
-          'Arrow functions are always anonymous',
-          'Arrow functions have a different scope of this than the object',
-        ],
-        correctAnswer:
-          'Arrow functions have a different scope of this than the object',
-      },
+  answers: [
+    'Las funciones flecha proporcionan propiedades adicionales que no son relevantes para el objeto',
+    'Las funciones flecha requieren parámetros',
+    'Las funciones flecha siempre son anónimas',
+    'Las funciones flecha tienen un alcance diferente de this que el objeto',
+  ],
+  correctAnswer: 'Las funciones flecha tienen un alcance diferente de this que el objeto',
+},
     ],
     'Programación backend': [
       {
