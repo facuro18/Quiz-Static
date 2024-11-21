@@ -374,7 +374,7 @@ let obj = {
         correctAnswer: 'Cascading Style Sheets',
       },
       {
-        question: 'How would you set a background color to red?',
+        question: '¿Cómo establecerías un color de fondo rojo?',
         code: ``,
         answers: [
           'backgroundcolor: red',
@@ -385,35 +385,35 @@ let obj = {
         correctAnswer: 'background-color: red',
       },
       {
-        question: 'What does box-sizing: border box do?',
+        question: '¿Qué hace box-sizing: border box?',
         code: `box-sizing: border-box;`,
         answers: [
-          'Adds a border to the element',
-          'Forces the element to maintain rectangular shape',
-          'Eliminates any properties of an existing border',
-          'Forces the margin, padding, and border dimensions to be inclusive of its width',
+          'Agrega un borde al elemento',
+	  'Obliga al elemento a mantener la forma rectangular',
+	  'Elimina cualquier propiedad de un borde existente',
+	  'Obliga a que las dimensiones del margen, el relleno y el borde incluyan su ancho',
         ],
         correctAnswer:
-          'Forces the margin, padding, and border dimensions to be inclusive of its width',
+          'Obliga a que las dimensiones del margen, el relleno y el borde incluyan su ancho',
       },
       {
         question:
-          'What is the difference between position: inline and position: inline-block?',
-        code: `
-position: inline;
-position: inline-block;`,
-        answers: [
-          'inline is only used to define exclusive padding and margin',
-          'inline-block is only used to define additional margins',
-          'inline is used to avoid wrapping elements to different rows on large screens',
-          'inline-block allows a user to define a width and height',
-        ],
-        correctAnswer:
-          'inline-block allows a user to define a width and height',
+          '¿Cuál es la diferencia entre position: inline y position: inline-block?',
+	  code: `
+	  position: inline;
+	  position: inline-block;`,
+	answers: [
+	  'inline solo se usa para definir márgenes y relleno exclusivos',
+	  'inline-block solo se usa para definir márgenes adicionales',
+	  'inline se usa para evitar que los elementos se ajusten a filas diferentes en pantallas grandes',
+	  'inline-block permite que un usuario defina un ancho y una altura',
+	],
+	correctAnswer:
+	  'inline-block permite que un usuario defina un ancho y una altura',
       },
       {
         question:
-          "What color would the the &lt;p id='foo' class='para'&gt; paragraph be?",
+          "¿De qué color sería el párrafo: &lt;p id='foo' class='para'&gt; ?",
         code: `* { color: cyan; }
 #foo { color: yellow; }
 .para { color: red; }
@@ -422,9 +422,9 @@ p.para { color: blue; }`,
         correctAnswer: 'yellow',
       },
     ],
-    'Versionado y despliegue': [
+    'Estructuras condicionales': [
       {
-        question: 'What are two types of conditional statements in JavaScript?',
+        question: '¿Cuáles son los dos tipos de declaraciones condicionales en JavaScript?',
         code: ``,
         answers: [
           'if, when',
@@ -435,26 +435,26 @@ p.para { color: blue; }`,
         correctAnswer: 'if, switch',
       },
       {
-        question: 'What will this conditional statement evaluate to?',
+        question: 'Este bloque de codigo, ¿Que retornará?',
         code: `if(5&lt;=2){ return true; } 
 else { return false; }`,
         answers: ['5 &gt; 2', 'true', '5 &lt;= 2', 'false'],
         correctAnswer: 'false',
       },
       {
-        question: 'When would you use a switch statement?',
-        code: ``,
-        answers: [
-          'When you want to produce a random outcome',
-          'If there is a variable involved that may change',
-          'When you need to switch a boolean to true or false',
-          'When you need many differing actions for many specific evaluations',
+        Pregunta: '¿Cuándo utilizarías una sentencia switch?',
+Código: ``,
+Respuestas: [
+'Cuando quieres producir un resultado aleatorio',
+'Si hay una variable involucrada que puede cambiar',
+'Cuando necesitas cambiar un booleano a verdadero o falso',
+'Cuando necesitas muchas acciones diferentes para muchas evaluaciones específicas',
         ],
         correctAnswer:
-          'When you need many differing actions for many specific evaluations',
+          'Cuando necesitas muchas acciones diferentes para muchas evaluaciones específicas',
       },
       {
-        question: 'What will this conditional statement evaluate to?',
+        question: 'Este bloque de codigo, ¿Que retornará?',
         code: `let foo = 1;
 if(foo){ return true; }
 else { return false; }`,
@@ -462,7 +462,7 @@ else { return false; }`,
         correctAnswer: 'true',
       },
       {
-        question: 'What will this conditional statement evaluate to?',
+        question: 'Este bloque de codigo, ¿Que retornará?',
         code: `let foo = 0;
 if(foo && foo &lt; 5){
  return 1; }
@@ -474,9 +474,9 @@ else {
         correctAnswer: '2',
       },
     ],
-    'Buenas prácticas y seguridad': [
+    'Clases y objetos': [
       {
-        question: 'How do we console.log the value of the make of this car?',
+        question: '¿Cómo podemos registrar en console.log el valor de la marca de este coche?',
         code: `let car = {
  year: 2018,
  make: "Audi",
@@ -492,7 +492,7 @@ else {
       },
       {
         question:
-          "How do we push all of an object's keys into a new array called carProps?",
+          "¿Cómo insertamos todas las claves de un objeto en una nueva matriz llamada carProps?",
         code: `let car = {
  year: 2018,
  make: "Audi",
@@ -508,7 +508,7 @@ else {
       },
       {
         question:
-          'What do you call a property of an object that is a function?',
+          '¿Cómo se llama una propiedad de un objeto que es una función?',
         code: `let car = {
  year: 2018,
  make: "Audi",
@@ -530,19 +530,19 @@ else {
         correctAnswer: 'Object method',
       },
       {
-        question: 'What makes an object different than an array?',
-        code: ``,
-        answers: [
-          'Objects can contain any data structure, while arrays cannot',
-          'Arrays are only useful as a storage medium, while objects can contain functions',
-          'Arrays are limited to a single dimension, while objects can be nested',
-          'Objects associate keys and values, while arrays are simply a list of data',
-        ],
-        correctAnswer:
-          'Objects associate keys and values, while arrays are simply a list of data',
-      },
+        pregunta: '¿Qué hace que un objeto sea diferente de una matriz?',
+código: ``,
+respuestas: [
+'Los objetos pueden contener cualquier estructura de datos, mientras que las matrices no',
+'Las matrices solo son útiles como medio de almacenamiento, mientras que los objetos pueden contener funciones',
+'Las matrices están limitadas a una sola dimensión, mientras que los objetos pueden estar anidados',
+'Los objetos asocian claves y valores, mientras que las matrices son simplemente una lista de datos',
+],
+respuestacorrecta:
+'Los objetos asocian claves y valores, mientras que las matrices son simplemente una lista de datos',
+},
       {
-        question: 'What would the following code console.log?',
+        question: '¿Qué retornará console.log?',
         code: `let obj = {
  total: 5,
  multiplier: 4,
