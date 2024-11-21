@@ -35,7 +35,7 @@ const STORE = {
       },
       {
         question:
-          'What is an accessible method for making keyboard navigatable image icons?',
+          '¿Cuál es un método accesible para crear íconos de imágenes navegables mediante el teclado?',
         code: ``,
         answers: [
           "&lt;img src='test.jpg' access='keyboard' ...&gt;",
@@ -46,15 +46,15 @@ const STORE = {
         correctAnswer: "&lt;input type='image' src='test.jpg' ...&gt;",
       },
     ],
-    'CSS y diseño': [
+    'Arreglos': [
       {
-        question: 'Which method would we use to return the value 4?',
+        question: '¿Qué método usaríamos para devolver el valor 4?',
         code: `let arr = [2,4,6,8,10]`,
         answers: ['arr[4]', 'arr[2]', 'arr[3]', 'arr[1]'],
         correctAnswer: 'arr[1]',
       },
       {
-        question: 'How would we add a value to the end of the array?',
+        question: '¿Cómo agregaríamos un valor al final de la matriz?',
         code: `let arr = 
 ['a','b','c','d','e']`,
         answers: [
@@ -67,7 +67,7 @@ const STORE = {
       },
       {
         question:
-          'What would we use to remove and return the last value of the array?',
+          '¿Qué usaríamos para eliminar y devolver el último valor de la matriz?',
         code: `let arr = 
 [3,1,4,1,5,9]`,
         answers: ['arr.remove(9)', "arr.grep('9')", 'arr.shift()', 'arr.pop()'],
@@ -81,16 +81,16 @@ const STORE = {
         correctAnswer: 'arr.length',
       },
       {
-        question: 'Which index is the value 9 at in the following array?',
+        question: '¿En qué índice se encuentra el valor 9 en la siguiente matriz?',
         code: `let arr = 
 [23,1,943,81,9,3.14159]`,
         answers: ['2', '3', '5', '4'],
         correctAnswer: '4',
       },
     ],
-    'JavaScript básico': [
+    'HTML5': [
       {
-        question: 'What are the 3 basic required elements for an HTML page?',
+        question: '¿Cuáles son los 3 elementos básicos necesarios para una página HTML?',
         code: ``,
         answers: [
           '&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;',
@@ -102,7 +102,7 @@ const STORE = {
       },
       {
         question:
-          'Which HTML element is the largest heading and should generally only be used once?',
+          '¿Qué elemento HTML es el encabezado más grande y, por lo general, solo debe usarse una vez?',
         code: ``,
         answers: [
           '&lt;heading&gt;',
@@ -113,7 +113,7 @@ const STORE = {
         correctAnswer: '&lt;h1&gt;',
       },
       {
-        question: 'Which HTML element creates a line break?',
+        question: '¿Qué elemento HTML crea un salto de línea?',
         code: `
 &lt;p&gt;The quick brown fox... 
 &lt;tag&gt;jumped over the lazy dogs&lt;/p&gt;`,
@@ -121,7 +121,7 @@ const STORE = {
         correctAnswer: '&lt;br&gt;',
       },
       {
-        question: 'How do we create an HTML link?',
+        question: '¿Cómo creamos un enlace HTML?',
         code: ``,
         answers: [
           "&lt;link href='test.com'&gt;Test.com&lt;/link&gt;",
@@ -132,7 +132,7 @@ const STORE = {
         correctAnswer: "&lt;a href='test.com'&gt;Test.com&lt;/a&gt;",
       },
       {
-        question: 'Which of these elements are all &lt;table&gt; elements?',
+        question: '¿Cuáles de estos elementos son todos elementos &lt;table&gt; ?',
         code: `&lt;table&gt;
  ... 
 &lt;/table&gt;`,
@@ -145,22 +145,22 @@ const STORE = {
         correctAnswer: '&lt;thead&gt;, &lt;tr&gt;, &lt;td&gt;',
       },
     ],
-    'DOM y manipulación': [
+    'CSS': [
       {
-        question: 'What is Flexbox?',
+        question: '¿Qué es Flexbox?',
         code: ``,
         answers: [
-          'A JavaScript library for responsive design',
-          'An HTML markup allowing for flexible content',
-          'An development approach to creating semantic HTML',
-          'A collection of CSS properties for ease of page layouts',
+          'Una biblioteca de JavaScript para diseño responsivo',
+	  'Un marcado HTML que permite contenido flexible',
+	  'Un enfoque de desarrollo para crear HTML semántico',
+	  'Una colección de propiedades CSS para facilitar el diseño de páginas',
         ],
         correctAnswer:
-          'A collection of CSS properties for ease of page layouts',
+          'Una colección de propiedades CSS para facilitar el diseño de páginas',
       },
       {
         question:
-          'To use flexbox we define a container as a flexbox. What is the CSS to do this?',
+          'Para utilizar flexbox definimos un contenedor como flexbox. ¿Cuál es el CSS para hacer esto?',
         code: `.flex-container {
  ...
 }`,
@@ -173,20 +173,20 @@ const STORE = {
         correctAnswer: 'display: flex',
       },
       {
-        question: 'flex-basis defines what...?',
+        question: '¿Que define flex-basis?',
         code: `.flex-item {
  flex-basis: 20px;
 }`,
         answers: [
-          'The base of the flex element',
-          'The margin of the flex element',
-          'The boldness of the flex element',
-          'The initial size of the flex element',
+          'La base del elemento flexible',
+	  'El margen del elemento flexible',
+	  'La negrita del elemento flexible',
+	  'El tamaño inicial del elemento flexible',
         ],
-        correctAnswer: 'The initial size of the flex element',
+        correctAnswer: 'El tamaño inicial del elemento flexible',
       },
       {
-        question: 'Which values are we able to use for flex-direction?',
+        question: '¿Qué valores podemos utilizar para flex-direction?',
         code: `.flex-container {
  flex-direction: ...
 }`,
@@ -200,23 +200,23 @@ const STORE = {
       },
       {
         question:
-          'What does the css property order for flex items allow you to do?',
+          '¿Qué te permite hacer el orden de propiedades CSS para elementos flexibles?',
         code: `.flex-item {
  order: ...
 }`,
         answers: [
-          'Specify the direction that flex items appear',
-          'Define when each flex item is loaded',
-          'Sort flex items by different values (alphabetical, numerical)',
-          'Specify which order the flex items appear',
+          'Especificar la dirección en la que aparecen los elementos flexibles',
+	  'Definir cuándo se carga cada elemento flexible',
+	  'Ordenar los elementos flexibles por diferentes valores (alfabético, numérico)',
+	  'Especificar en qué orden aparecen los elementos flexibles',
         ],
-        correctAnswer: 'Specify which order the flex items appear',
+        correctAnswer: 'Especificar en qué orden aparecen los elementos flexibles',
       },
     ],
     'APIs y fetch': [
       {
         question:
-          'What are considered the two most important attributes for a form?',
+          '¿Cuáles se consideran los dos atributos más importantes para un formulario?',
         code: `
 &lt;form ...&gt;
 &lt;/form&gt;`,
