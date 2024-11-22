@@ -11,7 +11,7 @@ const STORE = {
           '&lt;link&gt;',
           '&lt;stylesheet&gt;',
         ],
-        correctAnswer: '<link>',
+        correctAnswer: '&lt;link&gt;',
       },
       {
         question:
@@ -541,12 +541,12 @@ class Dog extends Animal {
           '¿Qué comando se utiliza para crear un nuevo proyecto con Vue CLI?',
         code: ``,
         answers: [
-          'vue init <nombre-del-proyecto>',
-          'vue create <nombre-del-proyecto>',
-          'npm install vue <nombre-del-proyecto>',
-          'create vue-app <nombre-del-proyecto>',
+          'vue init &lt;nombre-del-proyecto&gt;',
+          'vue create &lt;nombre-del-proyecto&gt;',
+          'npm install vue &lt;nombre-del-proyecto&gt;',
+          'create vue-app &lt;nombre-del-proyecto&gt;',
         ],
-        correctAnswer: 'vue create <nombre-del-proyecto>',
+        correctAnswer: 'vue create &lt;nombre-del-proyecto&gt;',
       },
       {
         question:
